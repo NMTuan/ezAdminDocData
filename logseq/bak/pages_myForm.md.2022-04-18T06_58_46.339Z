@@ -1,0 +1,39 @@
+- 表单页
+	- ```vue
+	  <template>
+	    <my-form v-bind="formProps" />
+	  </template>
+	  <script>
+	  export default {
+	    page: {
+	      name: '表单'
+	    },
+	    data () {
+	      return {
+	        formProps: {
+	          fields: [
+	            { label: '姓名', field: 'name' },
+	            {
+	              label: '性别',
+	              field: 'sex',
+	              type: 'select',
+	              options: [
+	                { label: '男', value: '1' },
+	                { label: '女', value: '2' },
+	                { label: '未知', value: '0' }
+	              ]
+	            }
+	          ]
+	        }
+	      }
+	    }
+	  }
+	  </script>
+	  ```
+- formProps配置项
+	- {{query (and (property component myForm) (property parent formProps) (sort-by sort asc))}}
+	  query-table:: true
+	  query-sort-by:: sort
+	  query-sort-desc:: false
+	  query-properties:: [:block :name :datatype :sort]
+-

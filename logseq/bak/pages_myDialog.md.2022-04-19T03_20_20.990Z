@@ -1,0 +1,49 @@
+- ## 介绍
+  background-color:: #787f97
+	-
+	- 对话框组件(也叫弹层/弹框/弹窗)
+	- `myDialog`是对`el-dialog`的简单包装.
+	- 与`el-dialog`区别如下:
+		- 1. `visible`属性不可配置, 永远为`true`. 这里无需担心对话框的显示状态, 全部集成到路由中去了.
+		  2. `append-to-body`属性默认值改为了`true`. 防止可能出现的渲染异常.
+	-
+- ## 示例代码
+  background-color:: #787f97
+	- ```vue
+	  <template>
+	    <my-dialog :dialog-props="dialogProps">
+	      这里是对话框内容
+	    </my-dialog>
+	  </template>
+	  <script>
+	  export default {
+	    page: { name: '常规对话框' },
+	    data () {
+	      return {
+	        dialogProps: {
+	          title: '对话框的标题',
+	          width: '320px',
+	          top: '10px'
+	        }
+	      }
+	    }
+	  }
+	  </script>
+	  ```
+	-
+- ## 配置项
+  background-color:: #787f97
+	-
+	- 由于`myDialog`是对`el-dialog`的简单包装., 所以`el-dialog`的配置也适用于`myDialog`.
+	- 所有`el-dialog`的配置可以看[官方手册](https://element.eleme.cn/#/zh-CN/component/dialog#attributes).
+	- #+BEGIN_NOTE
+	  但需要注意: 
+	  
+	  这里所有的配置项不是直接绑定到`my-dialog`的, 
+	  而是包在了一个元素`dialog-props`中
+	  #+END_NOTE
+	- 以下是常用的配置项:
+	- {{query (and (property component myDialog) ( property parent props))}}
+	  query-table:: true
+	  query-properties:: [:block :name :datatype :sort :defaultvalue]
+	-

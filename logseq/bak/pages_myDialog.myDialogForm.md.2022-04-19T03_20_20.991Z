@@ -1,0 +1,2 @@
+- {{query (and (property component myDialogForm) ( property parent props))}}
+  query-table:: true

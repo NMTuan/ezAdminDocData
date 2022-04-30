@@ -1,0 +1,24 @@
+- myForm
+	- formProps
+		- value / v-model
+		  component:: myForm
+		  parent:: props
+		  name::  绑定值
+		  dataType:: Object
+		  sort:: 9
+	- emits
+		- input
+		  component:: myForm
+		  parent:: emits
+		  name:: 表单值发生改变时触发
+		  dataType:: String
+		  sort:: 10
+- myDialogForm
+	- props
+		- value / v-model
+		  component:: myDialogForm
+		  parent:: props
+		  name:: 绑定值
+		  dataType:: String
+		  sort:: 10
+		- /tem

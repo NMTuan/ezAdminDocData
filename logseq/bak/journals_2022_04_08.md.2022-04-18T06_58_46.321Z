@@ -1,0 +1,39 @@
+- radio
+  component:: myForm
+  parent:: type
+  name:: 单选框
+  element-UI:: el-radio
+  sort:: 50
+- radioBtn/radioButton
+  component:: myForm
+  parent:: type
+  name:: 单选框(按钮组样式)
+  element-UI:: el-radio
+  sort:: 60
+- checkbox
+  component:: myForm
+  parent:: type
+  name:: 复选框
+  element-UI:: el-checkbox
+  sort:: 70
+- date
+  component:: myForm
+  parent:: type
+  name:: 日期选择器
+  element-UI:: el-date-picker
+  sort:: 80
+	- LATER year/month/date/dates/week/datetime/datetimerange/daterange/monthrange
+- time
+  component:: myForm
+  parent:: type
+  name:: 时间选择器
+  element-UI:: el-time-picker
+  sort:: 90
+- [buttons](myForm/formProps/buttons)
+  component:: myForm
+  parent:: formProps
+  name:: 表单按钮配置项
+  dataType:: Array
+  sort:: 20
+-
+-

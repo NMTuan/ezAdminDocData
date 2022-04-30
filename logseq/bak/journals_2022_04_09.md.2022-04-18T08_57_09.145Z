@@ -1,0 +1,37 @@
+- [fields](myForm/formProps/fields) 
+  component:: myForm
+  parent:: formProps
+  name:: 表单项配置
+  dataType:: Array
+  sort:: 10
+- fetchApi
+  component:: myForm
+  parent:: formProps
+  name:: 进入表单时拉取表单数据的接口
+  dataType:: Function
+  sort:: 30
+- fetchFields
+  component:: myForm
+  parent:: formProps
+  name:: 拉取表单数据时传递的参数
+  dataType:: Array, Object
+  sort:: 40
+	- 如果是Array, 会从`this.$route.params`中寻找对应的`key/value`.
+	- 如果是Object, 则直接使用Object为请求参数.
+- handleFetchData(res, formData)
+  component:: myForm
+  parent:: formProps
+  name:: 自定义处理请求回来的数据
+  dataType:: Function
+  sort:: 50
+	- 如果不定义, 则会把res.data合并至formData中.
+	- 如果定义了, 则走自定义处理, 这时候有两个参数:
+		- res 异步返回的数据
+		- formData 表单数据
+- afterFetched(formData, res)
+  component:: myForm
+  parent:: formProps
+  name:: 完成数据处理后的钩子
+  dataType:: Function
+  sort:: 60
+-

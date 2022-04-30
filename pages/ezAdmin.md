@@ -1,0 +1,28 @@
+- 这是一个基于 `Nuxt.js` 的管理平台整合方案。
+- 一个通过创建vue文件, 简单配置json数据即可完成页面搭建的管理平台.
+- 希望能加速小项目后端管理平台的搭建速度.
+-
+- 目前：用到了以下内容：
+	- `Vue.js@2` `Nuxt.js@2`
+	- `Tailwind.css@2` `RemixIcon@2`
+	- `ElementUI@2`
+-
+- {{embed ((62675a82-638c-45c0-93e9-147f19499c97))}}
+  id:: 62675a81-ab33-4030-87be-9ce7b6277826
+-
+- LATER 预览地址:
+- 仓库地址: [github](https://github.com/NMTuan/ezAdmin) (国内[gitee](https://gitee.com/nmtuan/ezAdmin))
+- LATER 文档地址: github (国内gitee)
+- LATER 文档数据: github
+-
+- [[轮子理念]]
+- [[界面截图]]
+- [[尝鲜搭建]]
+- [[目录结构]]
+- [[入门教程]]
+- [[权限配置]]
+- [[项目配置]]
+- [[接口配置]]
+- [[构建发布]]
+- [[鸣谢]]
+- [[支持]]

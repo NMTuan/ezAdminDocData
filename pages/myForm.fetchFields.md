@@ -1,0 +1,3 @@
+- 如果是Array, 会从`this.$route.params`中寻找对应的`key/value`.
+- 如果是Object, 则直接使用Object为请求参数.
+-
